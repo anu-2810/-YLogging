@@ -10,6 +10,7 @@
 		FA3F4E532004A54E00083E71 /* YLogging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3F4E492004A54E00083E71 /* YLogging.framework */; };
 		FA3F4E582004A54E00083E71 /* YLoggingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F4E572004A54E00083E71 /* YLoggingTests.swift */; };
 		FA3F4E5A2004A54F00083E71 /* YLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = FA3F4E4C2004A54E00083E71 /* YLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA3F4E642004A5A500083E71 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3F4E632004A5A500083E71 /* Logging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		FA3F4E522004A54E00083E71 /* YLoggingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLoggingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3F4E572004A54E00083E71 /* YLoggingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLoggingTests.swift; sourceTree = "<group>"; };
 		FA3F4E592004A54F00083E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3F4E632004A5A500083E71 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				FA3F4E4C2004A54E00083E71 /* YLogging.h */,
 				FA3F4E4D2004A54E00083E71 /* Info.plist */,
+				FA3F4E632004A5A500083E71 /* Logging.swift */,
 			);
 			path = YLogging;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					FA3F4E482004A54E00083E71 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					FA3F4E512004A54E00083E71 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3F4E642004A5A500083E71 /* Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		FA3F4E5E2004A54F00083E71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,6 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anu.YLogging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +347,7 @@
 		FA3F4E5F2004A54F00083E71 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -358,6 +366,7 @@
 		FA3F4E612004A54F00083E71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = YLoggingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anu.YLoggingTests;
@@ -369,6 +378,7 @@
 		FA3F4E622004A54F00083E71 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = YLoggingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.anu.YLoggingTests;
